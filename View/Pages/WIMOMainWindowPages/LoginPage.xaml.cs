@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TestNewDesign.View.MainWindowSystem.LoginPage
+namespace TestNewDesign.View.Pages.WIMOMainWindowPages
 {
     /// <summary>
     /// Логика взаимодействия для LoginPage.xaml

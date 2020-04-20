@@ -94,4 +94,15 @@
         <Setter Property="Width" Value="1200"/>
         <Setter Property="Height" Value="600"/>
     </Style>
+
+    <Style TargetType="Page" x:Key="StandartPageCenterSize">
+        <Setter Property="Height" Value="510"/>
+        <Setter Property="Width" Value="1020"/>
+    </Style>
+
+    <Style TargetType="Page" x:Key="StandartPageSideSize">
+        <Setter Property="Height"  Value="510"/>
+        <Setter Property="Width" Value="180"/>
+    </Style>
+
 </ResourceDictionary>
