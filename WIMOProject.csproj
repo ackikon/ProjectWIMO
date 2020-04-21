@@ -59,15 +59,31 @@
     <Compile Include="ViewModel\HelperViewModel\HelperViewModel.cs" />
     <Compile Include="ViewModel\HelperViewModel\ViewModelProp.cs" />
     <Compile Include="ViewModel\LoginPageViewModel\ClassLoginPageViewModel.cs" />
+    <Compile Include="ViewModel\WIMOFuncWindowViewModel\WIMOFuncWindowSystemViewModel.cs" />
     <Compile Include="ViewModel\WIMOMainWindowViewModel\WIMOMainWindowSystemViewModel.cs" />
-    <Compile Include="View\LoginPage\LoginPage.xaml.cs">
+    <Compile Include="View\Pages\WIMOFuncWindowPages\WIMOCenterPages\InfoPage.xaml.cs">
+      <DependentUpon>InfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\WIMOFuncWindowPages\WIMOSidesPages\AdminPage.xaml.cs">
+      <DependentUpon>AdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\WIMOFuncWindowPages\WIMOSidesPages\UnknowUserPage.xaml.cs">
+      <DependentUpon>UnknowUserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\WIMOFuncWindowPages\WIMOSidesPages\UserPage.xaml.cs">
+      <DependentUpon>UserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\WIMOMainWindowPages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MainWindowSystem\WIMOMainWindow.xaml.cs">
-      <DependentUpon>WIMOMainWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\RegisterPage\RegisterPage.xaml.cs">
+    <Compile Include="View\Pages\WIMOMainWindowPages\RegisterPage.xaml.cs">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\WIMOFuncWindow.xaml.cs">
+      <DependentUpon>WIMOFuncWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\WIMOMainWindow.xaml.cs">
+      <DependentUpon>WIMOMainWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="Resource\Dictionaries\Dictionary.xaml">
       <SubType>Designer</SubType>
@@ -77,15 +93,35 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\LoginPage\LoginPage.xaml">
+    <Page Include="View\Pages\WIMOFuncWindowPages\WIMOCenterPages\InfoPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MainWindowSystem\WIMOMainWindow.xaml">
+    <Page Include="View\Pages\WIMOFuncWindowPages\WIMOSidesPages\AdminPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\RegisterPage\RegisterPage.xaml">
+    <Page Include="View\Pages\WIMOFuncWindowPages\WIMOSidesPages\UnknowUserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\WIMOFuncWindowPages\WIMOSidesPages\UserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\WIMOMainWindowPages\LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\WIMOMainWindowPages\RegisterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\WIMOFuncWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\WIMOMainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

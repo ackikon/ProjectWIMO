@@ -3,6 +3,7 @@ using System.Windows;
 using TestNewDesign.ViewModel.HelperViewModel;
 using System;
 using System.Windows.Controls;
+using TestNewDesign.View.Pages.WIMOMainWindowPages;
 
 namespace TestNewDesign.ViewModel.WIMOMainWindowViewModel
 {
@@ -36,7 +37,7 @@ namespace TestNewDesign.ViewModel.WIMOMainWindowViewModel
             switch (pageNum)
             {
                 case 0:
-                    CurrentPage = new View.MainWindowSystem.LoginPage.LoginPage();
+                    CurrentPage = new View.Pages.WIMOMainWindowPages.LoginPage();
                     break;
                 default:
                     MessageBox.Show("Ошибка");

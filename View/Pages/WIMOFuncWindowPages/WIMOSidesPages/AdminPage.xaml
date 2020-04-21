@@ -1,0 +1,22 @@
+﻿<Page x:Class="TestNewDesign.View.Pages.WIMOFuncWindowPages.WIMOSidesPages.AdminPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestNewDesign.View.Pages.WIMOFuncWindowPages.WIMOSidesPages"
+      mc:Ignorable="d" 
+      Style="{StaticResource StandartPageSideSize}"
+      Title="AdminPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+
+        <Button Grid.Row="0" Style="{StaticResource StandardButton}" Margin="5">Button</Button>
+        <Button Grid.Row="1" Style="{StaticResource StandardButton}" Margin="5">Button</Button>
+    </Grid>
+</Page>

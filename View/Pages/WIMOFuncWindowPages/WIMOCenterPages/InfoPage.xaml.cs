@@ -10,21 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TestNewDesign.View.MainWindowSystem
+namespace TestNewDesign.View.Pages.WIMOFuncWindowPages.WIMOCenterPages
 {
     /// <summary>
-    /// Логика взаимодействия для WIMOMainWindow.xaml
+    /// Логика взаимодействия для InfoPage.xaml
     /// </summary>
-    public partial class WIMOMainWindow : Window
+    public partial class InfoPage : Page
     {
-        public WIMOMainWindow()
+        public InfoPage()
         {
             InitializeComponent();
-            DataContext = new ViewModel.WIMOMainWindowViewModel.WIMOMainWindowSystemViewModel();
-
-            ViewModel.WIMOMainWindowViewModel.WIMOMainWindowSystemViewModel.CloseWindowMain = new Action(() => this.Close());
         }
     }
 }

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TestNewDesign.View.RegisterPage
+namespace TestNewDesign.View.Pages.WIMOMainWindowPages
 {
     /// <summary>
     /// Логика взаимодействия для RegisterPage.xaml
