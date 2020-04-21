@@ -48,7 +48,7 @@ namespace TestNewDesign.ViewModel.WIMOMainWindowViewModel
 
         private void LoginCommandClick(object obj)
         {
-            MessageBox.Show("Логин");    
+            
             
         }
 
