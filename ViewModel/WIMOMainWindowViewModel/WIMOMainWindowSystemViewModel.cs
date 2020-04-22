@@ -13,15 +13,21 @@ namespace TestNewDesign.ViewModel.WIMOMainWindowViewModel
         public static Action CloseWindowMain { get; set; }
 
         private Page currentPage;
+        private Page currentPageRightSide;
 
-        public static int pageNum=0;
+        public static int pageNum=1;
+        public static int pageRightSideNum=0;
 
         public Page CurrentPage 
         {
             get => this.currentPage;
             set => this.Set<Page>(ref currentPage, value);
         }
-
+        public Page CurrentPageRightSide
+        {
+            get => this.currentPageRightSide;
+            set => this.Set<Page>(ref currentPageRightSide, value);
+        }
 
         public ICommand LoginCommand { get; set; } // Команда для входа 
         public ICommand RegCommand { get; set; } // Команда для регистрации
@@ -38,6 +44,22 @@ namespace TestNewDesign.ViewModel.WIMOMainWindowViewModel
             {
                 case 0:
                     CurrentPage = new View.Pages.WIMOMainWindowPages.LoginPage();
+                    break;
+                case 1:
+                    CurrentPage = new View.Pages.WIMOMainWindowPages.RegisterPage();
+                    break;
+                default:
+                    MessageBox.Show("Ошибка");
+                    break;
+            }
+
+            switch (pageRightSideNum)
+            {
+                case 0:
+                    CurrentPageRightSide = new View.Pages.WIMOMainWindowPages.WIMORightSidePages.PersonalDataPage();
+                    break;
+                case 1:
+                    CurrentPageRightSide = new View.Pages.WIMOMainWindowPages.WIMORightSidePages.AdditionalAgreementPage();
                     break;
                 default:
                     MessageBox.Show("Ошибка");

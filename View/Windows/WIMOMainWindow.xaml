@@ -3,20 +3,27 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
         xmlns:local="clr-namespace:TestNewDesign.View.Windows"
         mc:Ignorable="d"
         Title="WIMOMainWindow" WindowStartupLocation="CenterScreen" Style="{StaticResource WIMOStandardWindow}">
-    <Grid Height="Auto" Width="Auto">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="27"/>
-            <RowDefinition Height="573*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="735*"/>
-            <ColumnDefinition Width="20*"/>
-            <ColumnDefinition Width="10*"/>
-        </Grid.ColumnDefinitions>
-        <Button Style="{StaticResource SystemButton}"  Content="X" Grid.Column="1" Command="{Binding Path=ExitCommand}"/>
-        <Frame Grid.Row="1" Grid.ColumnSpan="3" Content="{Binding Path=CurrentPage, UpdateSourceTrigger=PropertyChanged}"/>
-    </Grid>
+  <Grid Height="Auto" Width="Auto">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="30"/>
+      <RowDefinition Height="90*"/>
+      <RowDefinition Height="30"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="15*"/>
+      <ColumnDefinition Width="30*"/>
+      <ColumnDefinition Width="500"/>
+      <ColumnDefinition Width="10*"/>
+      <ColumnDefinition Width="500"/>
+      <ColumnDefinition Width="30*"/>
+      <ColumnDefinition Width="15*"/>
+    </Grid.ColumnDefinitions>
+    <Button Style="{StaticResource SystemButton}"  Content="X" Grid.Column="5" Command="{Binding Path=ExitCommand}"/>
+    <Frame Grid.Row="1" Grid.Column="2" Content="{Binding Path=CurrentPage, UpdateSourceTrigger=PropertyChanged}" />
+    <Frame Grid.Row="1" Grid.Column="4" Content="{Binding Path=CurrentPageRightSide, UpdateSourceTrigger=PropertyChanged}" />
+  </Grid>
 </Window>

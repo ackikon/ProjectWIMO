@@ -73,11 +73,17 @@
     <Compile Include="View\Pages\WIMOFuncWindowPages\WIMOSidesPages\UserPage.xaml.cs">
       <DependentUpon>UserPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Pages\WIMOMainWindowPages\LoginPage.xaml.cs">
+    <Compile Include="View\Pages\WIMOMainWindowPages\WIMOLeftSidePages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Pages\WIMOMainWindowPages\RegisterPage.xaml.cs">
+    <Compile Include="View\Pages\WIMOMainWindowPages\WIMOLeftSidePages\RegisterPage.xaml.cs">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\WIMOMainWindowPages\WIMORightSidePages\AdditionalAgreementPage.xaml.cs">
+      <DependentUpon>AdditionalAgreementPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\WIMOMainWindowPages\WIMORightSidePages\PersonalDataPage.xaml.cs">
+      <DependentUpon>PersonalDataPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Windows\WIMOFuncWindow.xaml.cs">
       <DependentUpon>WIMOFuncWindow.xaml</DependentUpon>
@@ -109,11 +115,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Pages\WIMOMainWindowPages\LoginPage.xaml">
+    <Page Include="View\Pages\WIMOMainWindowPages\WIMOLeftSidePages\LoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Pages\WIMOMainWindowPages\RegisterPage.xaml">
+    <Page Include="View\Pages\WIMOMainWindowPages\WIMOLeftSidePages\RegisterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\WIMOMainWindowPages\WIMORightSidePages\AdditionalAgreementPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\WIMOMainWindowPages\WIMORightSidePages\PersonalDataPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
